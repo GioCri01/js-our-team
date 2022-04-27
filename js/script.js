@@ -65,9 +65,22 @@ for(let i in arrTeam){
       <h3>${team.nome}</h3>
       <p>${team.ruolo}</p>
     </div>
-  </div>
+    </div>
 
     `
     document.querySelector(".team-container").innerHTML += output;
 }
 
+/*sezione form */
+
+document.getElementById("addMemberButton").addEventListener("click",form);
+
+
+function form() {
+    const nuovoMembroNome = document.getElementById("name").value;
+    const ruoloMembro = document.getElementById("role").value;
+    const imgMembro = document.getElementById("image").value;
+    
+}
+
+   
